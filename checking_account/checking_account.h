@@ -2,15 +2,16 @@
 #define _CHECKING_ACCOUNT_H_
 #include "account.h"
 
-class Checking_Account: public Account {
+class CheckingAccount: public Account {
 static constexpr const double withdraw_fee {1.5};
+static constexpr const char* checking_account_insufficient_funds_exception_msg{ "Insufficient funds (including withdraw fee)."};
 
 public:
-	Checking_Account(std::string name = "checking account", double balance = 0.0);
+	CheckingAccount(std::string name = "checking account", double balance = 0.0);
 	virtual void print(std::ostream &os) const override;
 	virtual bool deposit(double amount) override;
 	virtual bool withdraw(double amount) override;
-	virtual ~Checking_Account() = default;
+	virtual ~CheckingAccount() = default;
 };
 
 #endif
