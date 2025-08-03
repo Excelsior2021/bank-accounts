@@ -1,6 +1,6 @@
 #ifndef _TRUST_ACCOUNT_H_
 #define _TRUST_ACCOUNT_H_
-#include "savings_account.h"
+#include "../savings_account/savings_account.h"
 
 class TrustAccount: public SavingsAccount {
 	//class constants

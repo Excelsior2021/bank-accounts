@@ -2,9 +2,9 @@
 #define _ACCOUNT_H_
 #include <string>
 #include <iostream>
-#include "print.h"
-#include "deposit_exception.h"
-#include "withdrawl_exception.h"
+#include "../print/print.h"
+#include "../exception_classes/deposit_exception.h"
+#include "../exception_classes/withdrawl_exception.h"
 
 class Account: public IPrint {
 	//exception messages

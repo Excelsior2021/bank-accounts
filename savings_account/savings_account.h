@@ -1,6 +1,6 @@
 #ifndef _SAVINGS_ACCOUNT_H_
 #define _SAVINGS_ACCOUNT_H_
-#include "account.h"
+#include "../account/account.h"
 
 class SavingsAccount: public Account {
 	protected:

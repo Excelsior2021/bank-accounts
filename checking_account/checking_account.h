@@ -1,6 +1,6 @@
 #ifndef _CHECKING_ACCOUNT_H_
 #define _CHECKING_ACCOUNT_H_
-#include "account.h"
+#include "../account/account.h"
 
 class CheckingAccount: public Account {
 static constexpr const double withdraw_fee {1.5};
